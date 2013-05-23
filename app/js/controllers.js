@@ -41,5 +41,25 @@ memApp
             e.target.nextElementSibling.style.display = "block";
           }
   				
+          $scope.showRandomList = function(){
+            var items = [];
+            categories.forEach(function(obj){
+              obj.items.forEach(function(item){
+                items.push(item);
+              });
+            });
+            var i = items.length, j, temp;
+            if(i === 0 ) return false;
+            while(--i){
+              j = Math.floor( Math.random() * ( i+1 ) );
+              console.log("randim j" +j+ " while i is " +i);
+              temp = items[i];
+              console.log("i temp" +JSON.stringify(temp));
+              items[i] = items[j];
+              items[j] = temp;
+            }
+            console.log('items is ' +items)
+            $scope.items = items.slice(8);
+          }
 
   	});

@@ -2,7 +2,7 @@
 <select class="category-select" ng-change="changeCategory()" ng-model="category" ng-options="category.name as category.name for category in categories">
 	<option style="display:none" value="">Select a cate</option>
 </select>
-
+<a href="javascript:void(0)" id="random" ng-click="showRandomList()">Random</a>
 <ul ng-model="category" class="item-list">
 	<li ng-repeat="item in items"> 
 		<a href="#/item/{{item.id}}" ng-click="" class="item-link">

@@ -1,0 +1,73 @@
+/* app css stylesheet */
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.login-wrapper{
+  padding: 50px;
+  background: #eee;
+  width: 500px;
+  margin: 0 auto;
+}
+
+#username,
+#password{
+  padding: 8px 10px;
+  border: 1px solid transparent;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+#login{
+  padding: 10px;
+  background: #aaa;
+  border: none;
+  color: #333;
+  cursor: pointer;
+}
+
+#login:hover{
+  background: #888;
+}
+
+.app-wrapper{
+  width: 900px;
+  background: #eee;
+  margin: 0 auto; 
+  min-height: 600px;
+  padding: 40px;
+}
+
+.category-list li,
+.item-list li{
+  list-style: none;
+  display: inline-block;
+  margin: 20px;
+}
+
+.category-link,
+.item-link{
+  display: block;
+}
+
+.name-wrapper{
+  position: relative;
+  text-align: center;
+}
+
+.name-wrapper a{
+  text-decoration: none;
+}
+
+.front{
+  position: absolute;
+  width: 100%;
+}
+
+.back{
+  position: absolute;
+  display: none;
+  width: 100%;
+}
